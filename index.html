@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Ambiental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="menu container">
+            <!-- Logo -->
+            <a href="#inicio" class="logo">Ambiental</a>
+            <!-- Menú móvil -->
+            <input type="checkbox" id="menu"> 
+            <label for="menu">
+                <img src="menu-icono.png" class="menu-icono" alt="Menú">
+            </label>
+            <!-- Panel de navegación -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="#contactos">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container" id="inicio">
+            <div class="header-info">
+                <h1>El cambio comienza en ti</h1>
+                <p>Cada acción cuenta, cada gesto verde suma</p>
+                <a href="#informacion" class="btn-1">Empieza</a>
+            </div>
+        </div>
+    </header>
+        <!-- Sección del Buscador -->
+        <section class="buscador">
+            <form action="buscar.php" method="GET" class="form-buscador">
+                <input type="text" name="query" placeholder="Buscar información..." required>
+                <button type="submit">Buscar</button>
+            </form>
+    </body>
+    </html>
+
+    <!-- Sección de Información (para agregar más contenido) -->
+    <section class="informacion container" id="informacion">
+        <h2>Biblioteca de Información Ambiental</h2>
+
+        <!-- Información adicional (añadir más bloques de información aquí) -->
+        <div class="tema">
+            <h3><span>Educación Ambiental</span></h3>
+            <p>La educación ambiental es esencial para sensibilizar a la población sobre la importancia de cuidar el medio ambiente.</p>
+            <a href="https://www.unesco.org/es/digital-learning/educacion-ambiental" target="_blank" class="btn-2">Más Información</a>
+        </div>
+
+        <div class="tema">
+            <h3><span>Conservación de la Biodiversidad</span></h3>
+            <p>Proteger la biodiversidad es vital para garantizar un equilibrio en los ecosistemas y preservar la vida en el planeta.</p>
+            <a href="https://www.worldwildlife.org/places/amazon" target="_blank" class="btn-2">Más Información</a>
+        </div>
+
+        <div class="tema">
+            <h3><span>Ahorro de Agua</span></h3>
+            <p>El agua es un recurso limitado. Aprender a ahorrar agua es una de las formas más efectivas de cuidar el planeta.</p>
+            <a href="https://www.hidrosfera.org/ahorro-de-agua/" target="_blank" class="btn-2">Más Información</a>
+        </div>
+
+        <div class="tema">
+            <h3><span>Plástico y sus Efectos</span></h3>
+            <p>El plástico contamina nuestros océanos y tierras. Reducir su uso es crucial para la salud de los ecosistemas.</p>
+            <a href="https://www.greenpeace.org/espana/que-hacemos/contaminacion-plastica/" target="_blank" class="btn-2">Más Información</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contactos -->
+    <section class="contactos container" id="contactos">
+        <h2>Contactos</h2>
+        <p>Si tienes preguntas o deseas más información, no dudes en contactarnos.</p>
+        <form action="mailto:contacto@ambiental.com" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit" class="btn-2">Enviar Mensaje</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ambiental | Todos los derechos reservados </p>
+        </div>
+    </footer>
+
+</body>
+</html>

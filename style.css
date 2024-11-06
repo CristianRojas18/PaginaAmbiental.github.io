@@ -1,0 +1,279 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: #264653; /* Fondo verde */
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* Centramos el contenido en el encabezado */
+    position: relative;
+}
+
+.header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 4.0rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Menú de navegación */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #2a6f2a;
+    border-radius: 5px;
+}
+
+/* Contenido del encabezado */
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según lo necesites */
+    background: url('background.jpg') no-repeat center center/cover;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el menú en dispositivos móviles */
+#menu {
+    display: none;
+}
+
+#menu:checked + label + .navbar {
+    display: block;
+}
+
+label {
+    cursor: pointer;
+}
+
+.menu-icono {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos de la sección de información */
+.informacion {
+    padding: 40px 0;
+    background-color: #e9f7f5;
+    text-align: center;
+}
+
+/* Estilo de cada tema */
+.tema {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tema h3 {
+    color: #264653;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.tema p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Botón de más información */
+.btn-2 {
+    background-color: #264653;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-2:hover {
+    background-color: #e9c46a;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu:checked + label + .navbar ul {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .menu-icono {
+        display: block;
+    }
+}
+/* Estilos de la sección de contacto */
+.contactos {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contactos h2 {
+    font-size: 2rem;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.contactos p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contactos form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactos input, .contactos textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contactos button {
+    padding: 10px 20px;
+    background-color: #264653;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactos button:hover {
+    background-color: #e9c46a;
+}
+
+/* Estilos para responsividad */
+@media (max-width: 768px) {
+    .contactos form {
+        width: 90%;
+    }
+}
+/* Estilos para el buscador */
+.buscador {
+    text-align: center;          /* Centra el buscador en la página */
+    margin-top: 50px;            /* Espaciado superior */
+}
+
+.form-buscador {
+    display: flex;               /* Utiliza flexbox para alinear los elementos */
+    justify-content: center;     /* Centra los elementos horizontalmente */
+    align-items: center;         /* Centra los elementos verticalmente */
+    max-width: 600px;            /* Ancho máximo para el formulario */
+    margin: 0 auto;              /* Centra el formulario dentro de su contenedor */
+}
+
+.form-buscador input {
+    padding: 10px;               /* Espaciado interno del campo de texto */
+    font-size: 1rem;             /* Tamaño de la fuente */
+    border: 1px solid #ccc;      /* Borde gris claro */
+    border-radius: 5px 0 0 5px;  /* Bordes redondeados */
+    width: 80%;                  /* El campo de texto ocupa el 80% del ancho */
+}
+
+.form-buscador button {
+    padding: 10px 15px;          /* Espaciado dentro del botón */
+    background-color: #4CAF50;   /* Color de fondo del botón */
+    color: white;                /* Color del texto */
+    border: none;                /* Elimina el borde */
+    border-radius: 0 5px 5px 0;  /* Bordes redondeados */
+    cursor: pointer;             /* Cambia el cursor al pasar por encima */
+}
+
+.form-buscador button:hover {
+    background-color: #45a049;   /* Cambio de color del botón al pasar el cursor */
+}
+
